@@ -1,0 +1,22 @@
+// Schema only operations
+// Note: creating unique constraints also creates indexes
+CREATE CONSTRAINT ON (t:Title) ASSERT t.id IS UNIQUE;
+CREATE CONSTRAINT ON (n:Name) ASSERT n.id IS UNIQUE;
+CREATE CONSTRAINT ON (ci:Cast_info) ASSERT ci.id IS UNIQUE;
+CREATE CONSTRAINT ON (chn:Char_name) ASSERT chn.id IS UNIQUE;
+CREATE CONSTRAINT ON (at:Aka_title) ASSERT at.id IS UNIQUE;
+CREATE CONSTRAINT ON (an:Aka_name) ASSERT an.id IS UNIQUE;
+CREATE CONSTRAINT ON (pi:Person_info) ASSERT pi.id IS UNIQUE;
+CREATE CONSTRAINT ON (cn:Company_name) ASSERT cn.id IS UNIQUE;
+CREATE CONSTRAINT ON (ct:Company_type) ASSERT ct.id IS UNIQUE;
+CREATE CONSTRAINT ON (mc:Movie_company) ASSERT mc.id IS UNIQUE;
+CREATE CONSTRAINT ON (k:Keyword) ASSERT k.id IS UNIQUE;
+CREATE CONSTRAINT ON (mi:Movie_info) ASSERT mi.id IS UNIQUE;
+CREATE CONSTRAINT ON (mi_idx:Movie_info_idx) ASSERT mi_idx.id IS UNIQUE;
+CREATE CONSTRAINT ON (cc:Complete_cast) ASSERT cc.id IS UNIQUE;
+CREATE CONSTRAINT ON (cct:Comp_cast_type) ASSERT cct.id IS UNIQUE;
+CREATE CONSTRAINT ON (rt:Role_type) ASSERT rt.id IS UNIQUE;
+CREATE CONSTRAINT ON (ml:Movie_link) ASSERT ml.id IS UNIQUE;
+CREATE CONSTRAINT ON (lt:Link_type) ASSERT lt.id IS UNIQUE;
+CREATE CONSTRAINT ON (it:Info_type) ASSERT it.id IS UNIQUE;
+CREATE CONSTRAINT ON (kt:Kind_type) ASSERT kt.id IS UNIQUE;
